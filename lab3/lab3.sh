@@ -17,7 +17,7 @@ cat access_log | grep "DELETE" | sort -u
 #YOLO.CSV
 
 echo "Users with uneven ID"
-cat yolo.csv | cut -f 1,2,3 -d "," | grep "^[0-9]*[13579]," >&2 #tu jeszcze nie dziala
+cat yolo.csv | cut -f 1,2,3 -d "," | grep "^[0-9]*[13579]," >&2 #
 
 echo "Users worth given numbers"
 cat yolo.csv | grep "\$[259]\.99[MB]$" | cut -f 2,3 -d ","
